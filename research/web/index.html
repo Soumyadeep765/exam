@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RRB NTPC Prep — Complete Study Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo" id="logoHome" role="button" tabindex="0" title="Go to Home">
+          <span class="logo-icon">🚂</span>
+          <div>
+            <strong>NTPC Prep Hub</strong>
+            <small>RRB CBT-1 Complete Guide</small>
+          </div>
+        </div>
+        <button class="sidebar-close" id="sidebarClose" aria-label="Close menu">×</button>
+      </div>
+
+      <div class="search-box">
+        <input type="search" id="searchInput" placeholder="Search topics, questions..." autocomplete="off" />
+      </div>
+
+      <nav class="nav" id="nav"></nav>
+
+      <div class="sidebar-footer">
+        <div class="exam-badge">
+          <span>100 Q · 90 min</span>
+          <span>GA 40 · Math 30 · Reasoning 30</span>
+        </div>
+      </div>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+        <h1 id="pageTitle">Home</h1>
+        <div class="topbar-actions">
+          <button class="btn-icon" id="themeBtn" title="Toggle theme">🌙</button>
+          <button class="btn-icon" id="fontDown" title="Smaller text">A−</button>
+          <button class="btn-icon" id="fontUp" title="Larger text">A+</button>
+        </div>
+      </header>
+
+      <article class="content" id="content">
+        <div class="loading">Loading...</div>
+      </article>
+    </main>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
